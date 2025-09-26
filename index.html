@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amora Perfumery - Elegance in Scent</title>
+
+    <!-- ======================= Favicon ======================= -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="home-page">
+
+    <!-- ======================= Header & Navigation ======================= -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Amora Perfumery Logo" style="width: 200px; height: auto;">
+            </div>
+            
+            <!-- Mobile Navigation Toggle Button -->
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <div class="hamburger"></div>
+            </button>
+
+            <nav class="main-nav" id="primary-navigation">
+                <ul>
+                    <li><a href="women.html">Women</a></li> <!-- Active link -->
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="unisex.html">Unisex</a></li>
+                    <li><a href="bundle.html">Bundle & Save</a></li>
+                    <li><a href="gift.html">Gift</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ======================= Fullscreen Hero Slider ======================= -->
+        <section class="hero-slider">
+            <!-- Instructions: Replace these URLs with your local images in the /images/ folder -->
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-image-1.jpg');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-image-2.jpg');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-image-3.jpg');"></div>
+            
+            <div class="hero-content">
+                <h2>Discover Your Signature Scent</h2>
+                <p>Timeless fragrances, crafted with passion and elegance.</p>
+                <a href="bundle.html" class="cta-button">Explore The Collection</a>
+            </div>
+        </section>
+
+        <!-- The rest of your main content remains the same -->
+        <section id="featured-products" class="featured-products">
+            <div class="container">
+                <h2 class="section-title">Featured Collection</h2>
+                <div class="product-grid">
+                    <!-- Product 1: Eclaire -->
+                    <div class="product-card">
+                        <div class="product-image" style="background-image: url('images/eclaire-lattafa.jpg');"></div>
+                        <h3 class="product-name">Eclaire (Lattafa)</h3>
+                        <a href="products/eclaire-lattafa.html" class="btn-details">View Details</a>
+                    </div>
+                    <!-- Product 2: Badee Al Oud Anethyst -->
+                    <div class="product-card">
+                        <div class="product-image" style="background-image: url('images/badee-al-oud-amethyst.jpg');"></div>
+                        <h3 class="product-name">Badee Al Oud Anethyst</h3>
+                        <a href="products/badee-al-oud-amethyst.html" class="btn-details">View Details</a>
+                    </div>
+                    <!-- Product 3: Raed Silver -->
+                    <div class="product-card">
+                        <div class="product-image" style="background-image: url('images/raed-silver-lattafa.jpg');"></div>
+                        <h3 class="product-name">Raed Silver</h3>
+                        <a href="products/raed-silver-lattafa.html" class="btn-details">View Details</a>
+                    </div>
+                    <!-- Product 4: Supremacy In Oud -->
+                    <div class="product-card">
+                        <div class="product-image" style="background-image: url('images/supremacy-in-oud-afnan.jpg');"></div>
+                        <h3 class="product-name">Supremacy In Oud</h3>
+                        <a href="products/supremacy-in-oud-afnan.html" class="btn-details">View Details</a>
+                    </div>
+                </div> <!-- End of the product-grid -->
+
+                <!-- ADDED: New container for the button -->
+                <div class="view-all-container">
+                    <a href="bundle.html" class="btn-details">View All Products</a>
+                </div>
+            </div>
+        </section>
+        <section class="brand-story">
+            <div class="container">
+                <h2 class="section-title">The Essence of Amora</h2>
+                <p>
+                    At Amora Perfumery, we believe that a fragrance is more than just a scent—it is an expression of identity, a memory in the making, and a personal signature. Our mission is to bring you a curated collection of the world's most captivating perfumes...
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================= Footer ======================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">Amora Perfumery</div>
+                    <p class="footer-about">The best place to find your new signature scent. We specialize in a curated selection of high-quality perfumes from renowned brands.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="women.html">Women</a></li>
+                        <li><a href="men.html">Men</a></li>
+                        <li><a href="unisex.html">Unisex</a></li>
+                        <li><a href="bundle.html">Bundle & Save</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <p><strong>Phone:</strong> +233 55 263 0163</p>
+                    <p><strong>Email:</strong> amoraperfumery@gmail.com</p>
+                    <p><strong>Location:</strong> Tema, Greater Accra</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Amora Perfumery. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <!-- ======================= Floating Chat Widget ======================= -->
+    <a href="https://wa.me/233552630163" class="floating-chat-widget" target="_blank">
+        <div class="chat-icon">
+            <!-- New, better chat bubble SVG icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"></path>
+            </svg>
+        </div>
+        <span class="chat-text">Chat with us</span>
+    </a>
+
+</body>
+</html>

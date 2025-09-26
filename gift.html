@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Card - Amora Perfumery</title>
+    
+    <!-- Favicon Links -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="internal-page">
+
+    <!-- ======================= Header & Navigation ======================= -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"> <!-- Link back to home -->
+                    <img src="images/logo.png" alt="Amora Perfumery Logo" style="width: 200px; height: auto;">
+                </a>
+            </div>
+            
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <div class="hamburger"></div>
+            </button>
+
+            <nav class="main-nav" id="primary-navigation">
+                <ul>
+                    <li><a href="women.html">Women</a></li> <!-- Active link -->
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="unisex.html">Unisex</a></li>
+                    <li><a href="bundle.html">Bundle & Save</a></li>
+                    <li><a href="gift.html">Gift</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ======================= Gift Card Hero Image ======================= -->
+        <section class="gift-card-hero" style="background-image: url('images/gift-card-hero.png');">
+            <!-- Save your generated hero image as gift-card-hero.jpg in /images/ -->
+        </section>
+
+        <!-- ======================= Gift Card Form Content ======================= -->
+        <section class="static-page gift-card-page">
+            <div class="container">
+                <!-- RESTRUCTURED: Image is now above the form -->
+                <div class="gift-card-visual">
+                     <img src="images/gift-card-design.png" alt="Amora Perfumery Gift Card">
+                     <!-- Save your 3:4 aspect ratio gift card design here -->
+                </div>
+
+                <div class="gift-form-container">
+                    <h1 class="page-title">Purchase a Gift Card</h1>
+                    <p class="gift-card-price">GH₵<span id="card-amount">1000</span>.00</p>
+                    <p class="taxes-info">Taxes included.</p>
+                    
+                    <form id="gift-card-form" action="#" method="POST">
+                        <div class="form-section">
+                            <label>Denominations</label>
+                            <div class="denom-options">
+                                <button type="button" class="denom-btn active" data-value="1000">₵1000</button>
+                                <button type="button" class="denom-btn" data-value="2000">₵2000</button>
+                                <button type="button" class="denom-btn" data-value="2500">₵2500</button>
+                            </div>
+                        </div>
+                        
+                        <!-- UPDATED FORM FIELDS -->
+                        <div class="form-group">
+                            <input type="text" name="sender_name" placeholder="Sender's name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="sender_email" placeholder="Sender's email (optional)">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="recipient_name" placeholder="Recipient's name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="recipient_email" placeholder="Recipient's email (optional)">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Message (optional)" maxlength="200"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">Send as Gift</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- ======================= Footer ======================= -->
+    <footer class="site-footer">
+        <!-- The footer content is identical to index.html, no need to copy it again here unless you want to -->
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">Amora Perfumery</div>
+                    <p class="footer-about">The best place to find your new signature scent...</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="women.html">Women</a></li>
+                        <li><a href="men.html">Men</a></li>
+                        <li><a href="unisex.html">Unisex</a></li>
+                        <li><a href="bundle.html">Bundle & Save</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <p><strong>Phone:</strong> +233 55 263 0163</p>
+                    <p><strong>Email:</strong> amoraperfumery@gmail.com</p>
+                    <p><strong>Location:</strong> Tema, Greater Accra</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Amora Perfumery. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <!-- ======================= Floating Chat Widget ======================= -->
+    <a href="https://wa.me/233552630163" class="floating-chat-widget" target="_blank">
+        <div class="chat-icon">
+            <!-- New, better chat bubble SVG icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"></path>
+            </svg>
+        </div>
+        <span class="chat-text">Chat with us</span>
+    </a>
+    
+</body>
+</html>
